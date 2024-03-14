@@ -1,0 +1,495 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html{
+    overflow: scroll;
+}
+:root{
+    --bg-color: #ffffff;
+    --text-color: #111111;
+    --main-color:#c8815f;
+    --big-font: 4.5em;
+    --h2-font: 3.3rem;
+    --h3-font: 2rem;    
+    --normal-font: 1rem;
+}
+body{
+    background:var(--bg-color);
+    color: var(--text-color);
+}
+.bxs-user-account{
+    color: black;
+    font-size: 32px;
+}
+.bxs-user-account:hover{
+    color:var(--main-color);
+}
+header{
+    width:100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 14%;
+    transition: all .35 ease;
+}
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: var(--text-color);
+    font-weight: 600;
+    padding:10px 25px;
+    font-size: var(--normal-font);
+    transition: all .36s ease;
+}
+.navlist a:hover{
+    color:var(--main-color);
+}
+.header-icons i{
+    font-size: 32px;
+    color:black;
+    margin-right: 20px;
+    transition: all .36s ease;
+}
+.header-icons i:hover{
+    color:var(--main-color);
+}
+#menu-icon{
+    font-size: 34px;
+    color:var(--text-color);
+    z-index: 1001;
+    margin-right: 20px;
+    display: none;
+}
+section{
+    padding: 100px 14%; 
+}
+.home{
+    height: 100vh;
+    width:100%;
+    background: url(fashion-featured-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.button{
+    background: transparent;
+    border: none;
+}
+.home-text h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .5rem;
+    margin-bottom: 1.4rem;
+
+}
+.home-text span .arrival{
+    font-size: 3.5rem;
+}
+.home-text p{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    letter-spacing: .2rem;
+    color:rgb(0, 0, 0);
+}
+.btn{
+    display: inline-block;
+    padding: 13px 25px;
+    background: #1d48d7;
+    color: white;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+.btn:hover{
+    background: rgb(119, 182, 255);
+    transition: 0.5s;
+}
+header.sticky{
+    background: var(--bg-color);
+    padding: 14px 14%;
+    box-shadow: 0px 0px 10px rgb(0 0 0/10%);
+}
+.center-text{
+    text-align: center;
+}
+.center-text h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.contact{
+    display: flex;
+}
+.featured-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: rem;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.image-item-0 img,
+.image-item-1 img ,
+.image-item-2 img {  
+    text-align: center;
+    margin: 40px; /* Add space between each image-item */
+    width: 250px; /* Distribute items in a row with spacing */
+    box-sizing: border-box;
+    height: 260px;
+    border-radius: 10px;
+    box-shadow: 7px 12px 19px 3px #a99a9a;;
+}
+.fea-text {
+    text-align: center;
+    font-size: 17px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.image-item-0:hover{
+    transform: scale(1.1) translateY(5px);
+    cursor: pointer;
+}
+.image-item-1:hover{
+    transform: scale(1.1) translateY(5px);
+    cursor: pointer;
+}
+.image-item-2:hover{
+    transform: scale(1.1) translateY(5px);
+    cursor: pointer;
+}
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    background: var(--main-color);
+    color: white;
+    border-radius: 40px;
+    margin-top:81px;
+    position: absolute;
+}
+.btn-1:hover{
+    background: rgb(255, 106, 255);
+    color:#111111;
+    transform: scale(1.1) translateY(2px);
+    cursor: pointer;
+}
+.new{
+    height:105vh;
+    width:100%;
+    background-image: url(pink-neon-lights-fashion-model.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.brand-text{
+    margin-left: 730px;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 41px;
+}
+h2{
+    text-align: center;
+    padding-top: 30px;
+}
+h4{
+    font-size: 20px;
+    position: absolute;
+    right: 271px;
+}
+.term{
+    padding-top: 815px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+.footer-items{
+    width:100%;
+    background-color: #ddf7fc;
+    padding-left: 70px;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.socailIcons{
+    display:flex;
+    justify-content: center;
+}
+.socailIcons a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.socailIcons a i{
+    font-size: 1.7em;
+    color:black;
+    opacity: 0.9;
+}
+.socailIcons a:hover{
+    background-color:var(--text-color);
+    transition: 0.5;
+}
+.socailIcons a:hover i{
+    background-color:var(--bg-color);
+    transition: 0.5;
+}
+.footer-text p{
+    color:rgb(43, 42, 42);
+    text-align: center;
+}
+#b1{
+    position: absolute;
+    font-size: 30px;
+    padding-bottom: 44px; 
+    right: 265px;
+    line-height: 57px;
+    margin-top: -100px;
+}
+#b2{
+    font-size: 20px;
+    position: absolute;
+    right: 8px;
+    line-height: 57px;
+}
+.wrapper {
+    position: absolute;
+    top: 26%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 225, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease,height .2s ease;
+}
+.wrapper.active-Popup{
+    transform: scale(1);
+}
+.wrapper .form-box-login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.wrapper.active .form-box-login{
+    transition: none;
+    transform: translateX(-400px);
+}
+.wrapper .form-box{
+    width:100%;
+    padding: 40px;
+    padding-top: 77px;
+}
+.wrapper .form-box-register{
+    position: absolute; 
+    transition: none;
+    transform: translateX(400px);
+}
+.wrapper.active .form-box-register{
+    transition: transform .18s ease;
+
+    transform: translateX(0);
+}
+.form-box h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width:100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.input-box input:focus+label,
+.input-box .input:valid+label,
+.input-box input:not(:placeholder-shown) + label{
+    top: -5px;
+}
+.login-register p{
+    font-size: 14px;
+    font-weight: normal
+}
+#b132{
+    content: "\eee1";
+    position: absolute;
+    right: 5px;
+    font-size: 26px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+.bxl-gmail:before {
+    font-size: 25px;
+    right: -258px;
+    position: absolute;
+    content: "\e906";
+    top: 107px;
+}
+.input-box input{
+    width:100%;
+    height:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+}
+.remember-forget{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0px 15px;
+    display: flex;
+    justify-content: space-between;  
+}
+.remember-forget a{
+    color: #162938;
+    text-decoration: none;
+}
+.remember-forget a:hover{
+    color: #162938;
+    text-decoration:underline;
+}
+.remember-forget label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.btn33{
+    width: 315px;
+    height: 43px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+.login-register{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a{
+    color:#162938;
+    text-decoration: none;
+    font-weight: 500;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+.wrapper .icon-close{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 45px;
+    height: 40px;
+    background: #162938;
+    color: #ffffff;
+    font-size: 2em;
+    cursor: pointer;
+    border-bottom-left-radius: 20px;
+}
+.brand1 {
+    background-color: #c8815f;
+    height: 480px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.brand2 {
+    display: flex; 
+    animation: scroll 8s linear infinite; 
+}
+
+.brnd {
+    flex: 0 0 200px; 
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    transition: transform 0.1s;
+}
+
+
+.brnd + .brnd {
+    margin-left: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-260px); 
+    }
+}
+
+.brnd:hover {
+    animation-play-state:running;
+    transform: translateX(0);
+}
+
+img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.1s;
+}
+
+.brnd:hover img {
+    transform: scale(1.5);
+}
