@@ -1,2 +1,2 @@
 # WT
- Basic fashion website. 
+ Basic fashion website using html ,css and javasript.  
